@@ -2,7 +2,7 @@ title: Cerberus protocol
 description: Cerberus is a step-by-step protocol for organisations to securely store bitcoin treasuries without the need for a third-party custodian.
 
 # Important: Reference your custom theme
-remote_theme: nwoodfine/style-the-docs
+remote_theme: nwoodfine/style-the-docs@master
 
 # Other settings
 baseurl: "/cerberus"
