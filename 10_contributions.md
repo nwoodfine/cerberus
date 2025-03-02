@@ -38,3 +38,44 @@ If you want to help but are short on ideas, here are some pages we're going to g
 * Hardware wallet recovery
 * Hardware wallet replacement
 * Personnel changes
+
+## Local development
+
+1. Clone both repositories side by side in the same parent directory:
+   ```bash
+   git clone https://github.com/nwoodfine/cerberus.git
+   git clone https://github.com/nwoodfine/style-the-docs.git
+   ```
+
+2. Ensure Ruby 3.2.2 is installed (using a version manager like rbenv or RVM is recommended):
+   ```bash
+   # Using rbenv
+   rbenv install 3.2.2
+   rbenv local 3.2.2
+   
+   # Or using RVM
+   rvm install 3.2.2
+   rvm use 3.2.2
+   ```
+
+3. Navigate to the cerberus directory:
+   ```bash
+   cd cerberus
+   ```
+
+4. Install dependencies:
+   ```bash
+   bundle install
+   ```
+
+5. Run the site locally:
+   ```bash
+   bundle exec jekyll serve
+   ```
+
+6. View the site at: http://localhost:4000/cerberus/
+
+## External theme
+
+This site uses a custom fork of [Just the Docs](https://github.com/just-the-docs/just-the-docs) located at:
+https://github.com/nwoodfine/style-the-docs
