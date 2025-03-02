@@ -29,7 +29,7 @@
 // $purple-100: #5e41d0;
 // $purple-200: #4e26af;
 // $purple-300: #381885;
-//
+
 $blue-000: #2c84fa;
 $blue-100: #2869e6;
 $blue-200: #264caf;
@@ -123,3 +123,72 @@ $btn-primary-color: $blue-100 !default;
 //   lg: 800px,
 //   xl: 1316px
 // );
+
+// Add Auto-numbering CSS
+body.auto-numbering {
+  // Counter setup for main content
+  counter-reset: h2counter;
+
+  h2:not(.no_toc) {
+    counter-reset: h3counter;
+    counter-increment: h2counter;
+  }
+
+  h2:not(.no_toc):before {
+    content: counter(h2counter) ". ";
+  }
+
+  h3:not(.no_toc) {
+    counter-reset: h4counter;
+    counter-increment: h3counter;
+  }
+
+  h3:not(.no_toc):before {
+    content: counter(h2counter) "." counter(h3counter) " ";
+  }
+
+  h4:not(.no_toc) {
+    counter-increment: h4counter;
+  }
+
+  h4:not(.no_toc):before {
+    content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) " ";
+  }
+
+  // Counter setup for TOC - Updated for #markdown-toc structure
+  #markdown-toc {
+    counter-reset: toc-h2;
+  }
+
+  #markdown-toc > li {
+    counter-increment: toc-h2;
+  }
+
+  #markdown-toc > li > a:before {
+    content: counter(toc-h2) ". ";
+  }
+
+  #markdown-toc > li > ul {
+    counter-reset: toc-h3;
+  }
+
+  #markdown-toc > li > ul > li {
+    counter-increment: toc-h3;
+  }
+
+  #markdown-toc > li > ul > li > a:before {
+    content: counter(toc-h2) "." counter(toc-h3) " ";
+  }
+
+  #markdown-toc > li > ul > li > ul {
+    counter-reset: toc-h4;
+  }
+
+  #markdown-toc > li > ul > li > ul > li {
+    counter-increment: toc-h4;
+  }
+
+  #markdown-toc > li > ul > li > ul > li > a:before {
+    content: counter(toc-h2) "." counter(toc-h3) "." counter(toc-h4) " ";
+  }
+}

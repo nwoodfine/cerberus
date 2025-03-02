@@ -29,3 +29,12 @@ The cerberus protocol has received significant contributions from:
 *Please note that contributions do not necessarily indicate endorsement.*
 
 In addition to the contributors above, we've received invaluable feedback from many friends in the industry that indirectly made its way into cerberus. **Here's a big thanks to those that helped, you know who you are!**
+
+## Upcoming pages you may be able to help with
+If you want to help but are short on ideas, here are some pages we're going to gradually get to. 
+* Setup ceremony
+* Receive a transaction
+* Send a transaction
+* Hardware wallet recovery
+* Hardware wallet replacement
+* Personnel changes

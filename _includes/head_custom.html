@@ -1,0 +1,8 @@
+<!-- Script to apply auto-numbering based on front matter -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    {% if page.auto_numbering == true %}
+      document.body.classList.add('auto-numbering');
+    {% endif %}
+  });
+</script> 

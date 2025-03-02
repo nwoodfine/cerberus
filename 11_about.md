@@ -7,7 +7,7 @@ image: /assets/cerberus_title.png
 ---
 
 # History
-The cerberus protocol was originally conceived at a fledgling bitcoin startup called Clavestone, intended as an open-source framework for groups—such as companies, charities, or any collective—to securely store bitcoin using multisig technology. The draft started taking shape but was halted when the Clavestone team disbanded, leaving it dormant for several years.
+The cerberus protocol was originally conceived at a fledgling bitcoin startup [called Clavestone](https://medium.com/@clavestone), intended as an open-source framework for organisations—such as companies, charities, or any collective—to securely store bitcoin using multisig technology. The draft started taking shape but was halted when the Clavestone team disbanded, leaving it dormant for several years.
 
 Later, the Bitcoin Design team identified a need within the Bitcoin community for a self-sovereign storage solution for teams, independent of third-party custody services. This sparked its revival and further development.
 
