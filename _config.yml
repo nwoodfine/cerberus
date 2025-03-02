@@ -1,12 +1,22 @@
-remote_theme: Clavestone/style-the-docs
-title: Cerberus
-email: storage@clavestone.io
-description: >-
-  Cerberus is a step-by-step protocol for companies to securely store bitcoin investments without the need for a third-party custodian. The protocol combines both technical and procedural guidance for bitcoin storage.
-twitter_username: clavestone_
-github_username: clavestone
+title: Cerberus protocol
+description: Cerberus is a step-by-step protocol for organisations to securely store bitcoin treasuries without the need for a third-party custodian.
+
+# Important: Reference your custom theme
+remote_theme: nwoodfine/style-the-docs
+
+# Other settings
+baseurl: "/cerberus"
+url: "https://nwoodfine.github.io"
+
+# Just the Docs settings
+color_scheme: light
+search_enabled: true
 
 # Aux links for the upper right navigation
 aux_links:
-  "Daily & annual performance of bitcoin since 2013":
-    - "https://storeofvalue.clavestone.io/"
+  "Bitcoin Design":
+    - "https://bitcoin.design"
+
+# Add to your existing _config.yml
+plugins:
+  - jekyll-include-cache
